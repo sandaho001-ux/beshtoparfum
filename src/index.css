@@ -1,5 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-.font-playfair { font-family: 'Playfair Display', serif; }
-body { background-color: #f5efe6; }
+
+/* Базовые настройки */
+body {
+  @apply bg-amber-50 text-gray-900 font-sans antialiased;
+}
+
+/* Заголовки */
+h1, h2, h3, h4, h5 {
+  @apply font-semibold text-gray-800;
+}
+
+/* Кнопки */
+button {
+  @apply bg-amber-600 text-white px-4 py-2 rounded-lg hover:bg-amber-700 transition;
+}
